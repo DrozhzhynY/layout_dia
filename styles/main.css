@@ -376,10 +376,6 @@ textarea {
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
   color: #fff; }
-  .work__wrap {
-    margin: 0 auto;
-    height: 976px;
-    max-width: 1600px; }
   .work__slider {
     position: absolute;
     bottom: 0;
@@ -415,6 +411,11 @@ textarea {
     margin-bottom: 64px; }
   .approach__icon {
     margin-right: 32px; }
+
+@media (min-width: 1600px) {
+  .work {
+    margin: 50px auto;
+    border-radius: 200px; } }
 
 @media (max-width: 1300px) {
   .approach {
@@ -581,7 +582,8 @@ textarea {
     .footer__inner--padding {
       padding-bottom: 80px; }
   .footer__form-wrap {
-    width: 460px; }
+    width: 100%;
+    max-width: 460px; }
   .footer__form-title {
     margin-bottom: 56px;
     font-family: "Poppins", sans-serif;
@@ -678,7 +680,17 @@ textarea {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .footer__logo {
+    display: none; }
+  .footer__nav {
+    display: none; }
+  .button.form__button {
+    width: 100%; } }
 
 * {
   -webkit-box-sizing: border-box;
