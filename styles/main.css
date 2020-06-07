@@ -502,7 +502,10 @@ textarea {
   .services__inner-1, .services__inner-2 {
     margin: 0 auto; }
   .services__item--margin {
-    position: static; } }
+    position: static;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; } }
 
 .work {
   position: relative;
